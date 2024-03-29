@@ -1,7 +1,14 @@
-# run-script-turso
+# run script turso
 
-gerar um .exe para Windows
+## Antes de tudo configure as variáveis:
+* `URL_DATABASE`;
+* `URL_TOKEN_DATABASE`;
+
+> Para inforamação https://docs.turso.tech/sdk/ts/quickstart
+
+
+Gerar um .exe para Windows
 ```bash
-npm run make
+npm install && npm run package
 
 ```
