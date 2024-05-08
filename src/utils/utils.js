@@ -31,36 +31,27 @@ export const utils = {
         table.appendChild(tbody);
     },
 
-    message: {
-        success(message) {
-            showAlert(message, 'success');
-        },
-        error(message) {
-            showAlert(message, 'danger');
-        },
-        warning(message) {
-            showAlert(message, 'warning');
-        },
-        info(message) {
-            showAlert(message, 'info');
-        }
-    }
-}
+    /**
+     * 
+     * @param {{message: string, type: 'none' | 'info' | 'error' | 'question' | 'warning'}} options 
+     */
+    showMessageBox(options) {
+        window.App.showMessageBox({message: options.message, type: options.type});
+    },
 
-/**
- * 
- * @param {string} message 
- * @param {'success' | 'danger' | 'warning' | 'info'} type 
- */
-function showAlert(message, type) {
-    const alertPlaceholder = document.getElementById('message');
-    const wrapper = document.createElement('div');
-    wrapper.innerHTML = [
-        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-        `   <div>${message}</div>`,
-        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-        '</div>'
-    ].join('');
+    showModal(show = false){
+        const Modal = new bootstrap.Modal(document.getElementById('Modal'), {
+            keyboard: false
+        });
+        show ? Modal?.show() : Modal?.hide();
+    },
 
-    alertPlaceholder.append(wrapper);
-}
+    loading(value = false) {
+        const loading = document.getElementById('loading-background');
+        if(value) {
+            loading.style.display = 'flex';
+        } else {
+            loading.style.display = 'none';
+        };
+    },
+};
