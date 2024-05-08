@@ -1,6 +1,6 @@
 {
   "name": "run-script-turso",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Aplicativo para rodar script no banco noSQLite do Turso.",
   "main": "main.js",
   "scripts": {
