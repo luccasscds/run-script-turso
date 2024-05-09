@@ -28,3 +28,4 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run package
+    - run: start .\out\run-script-turso-win32-x64\run-script-turso.exe
