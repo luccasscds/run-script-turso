@@ -1,5 +1,6 @@
 # run script turso
 [![Build Status](https://img.shields.io/github/actions/workflow/status/luccasscds/run-script-turso/node.js.yml?branch=main&label=build&logo=nodedotjs)](https://github.com/luccasscds/run-script-turso/actions/workflows/node.js.yml)
+![Static Badge](https://img.shields.io/badge/dependabot-alerts?logo=dependabot)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/luccasscds/run-script-turso)
 ![GitHub repo size](https://img.shields.io/github/repo-size/luccasscds/run-script-turso)
 
